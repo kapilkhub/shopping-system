@@ -25,7 +25,10 @@
               "apps/kamazon/src/favicon.ico",
               "apps/kamazon/src/assets"
             ],
-            "styles": ["apps/kamazon/src/styles.scss"],
+            "styles": [
+              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
+              "apps/kamazon/src/styles.scss"
+            ],
             "scripts": []
           },
           "configurations": {
@@ -83,7 +86,10 @@
               "apps/kamazon/tsconfig.app.json",
               "apps/kamazon/tsconfig.spec.json"
             ],
-            "exclude": ["**/node_modules/**", "!apps/kamazon/**/*"]
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/kamazon/**/*"
+            ]
           }
         },
         "test": {
@@ -116,8 +122,13 @@
         "lint": {
           "builder": "@angular-devkit/build-angular:tslint",
           "options": {
-            "tsConfig": ["apps/kamazon-e2e/tsconfig.e2e.json"],
-            "exclude": ["**/node_modules/**", "!apps/kamazon-e2e/**/*"]
+            "tsConfig": [
+              "apps/kamazon-e2e/tsconfig.e2e.json"
+            ],
+            "exclude": [
+              "**/node_modules/**",
+              "!apps/kamazon-e2e/**/*"
+            ]
           }
         }
       }
