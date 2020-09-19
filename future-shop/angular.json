@@ -26,8 +26,7 @@
               "apps/kamazon/src/assets"
             ],
             "styles": [
-              "./node_modules/@angular/material/prebuilt-themes/pink-bluegrey.css",
-              "apps/kamazon/src/styles.scss"
+              "apps/kamazon/src/assets/styles/app.scss"
             ],
             "scripts": []
           },
