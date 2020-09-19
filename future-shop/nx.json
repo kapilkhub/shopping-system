@@ -18,12 +18,7 @@
       "runner": "@nrwl/nx-cloud",
       "options": {
         "accessToken": "YWI0NjhkOGItM2QwYy00NzEzLTlmYzctNmFmZWFlN2NmYWY1fHJlYWQtd3JpdGU=",
-        "cacheableOperations": [
-          "build",
-          "test",
-          "lint",
-          "e2e"
-        ],
+        "cacheableOperations": ["build", "test", "lint", "e2e"],
         "canTrackAnalytics": false,
         "showUsageWarnings": true
       }
@@ -35,9 +30,13 @@
     },
     "kamazon-e2e": {
       "tags": [],
-      "implicitDependencies": [
-        "kamazon"
-      ]
+      "implicitDependencies": ["kamazon"]
+    },
+    "shared-ui-common": {
+      "tags": ["scope:shared", "type:ui", "platform:desktop"]
+    },
+    "shared-util-auth": {
+      "tags": ["scope:shared", "type:util", "platform:desktop"]
     }
   }
 }
