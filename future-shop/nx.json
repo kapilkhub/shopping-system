@@ -1,0 +1,43 @@
+{
+  "npmScope": "future-shop",
+  "affected": {
+    "defaultBase": "master"
+  },
+  "implicitDependencies": {
+    "angular.json": "*",
+    "package.json": {
+      "dependencies": "*",
+      "devDependencies": "*"
+    },
+    "tsconfig.base.json": "*",
+    "tslint.json": "*",
+    "nx.json": "*"
+  },
+  "tasksRunnerOptions": {
+    "default": {
+      "runner": "@nrwl/nx-cloud",
+      "options": {
+        "accessToken": "YWI0NjhkOGItM2QwYy00NzEzLTlmYzctNmFmZWFlN2NmYWY1fHJlYWQtd3JpdGU=",
+        "cacheableOperations": [
+          "build",
+          "test",
+          "lint",
+          "e2e"
+        ],
+        "canTrackAnalytics": false,
+        "showUsageWarnings": true
+      }
+    }
+  },
+  "projects": {
+    "kamazon": {
+      "tags": []
+    },
+    "kamazon-e2e": {
+      "tags": [],
+      "implicitDependencies": [
+        "kamazon"
+      ]
+    }
+  }
+}
