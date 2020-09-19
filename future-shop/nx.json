@@ -37,6 +37,9 @@
     },
     "shared-util-auth": {
       "tags": ["scope:shared", "type:util", "platform:desktop"]
+    },
+    "products-feature": {
+      "tags": ["scope:products", "type:feature", "platform:desktop"]
     }
   }
 }

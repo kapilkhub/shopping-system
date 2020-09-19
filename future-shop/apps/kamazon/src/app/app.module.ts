@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {SharedUiCommonModule} from '@kamazon/ui-common-lib'
 import {AppRoutingModule} from "./app-routing.module"
 
+
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, BrowserAnimationsModule, SharedUiCommonModule,AppRoutingModule],

@@ -25,9 +25,7 @@
               "apps/kamazon/src/favicon.ico",
               "apps/kamazon/src/assets"
             ],
-            "styles": [
-              "apps/kamazon/src/assets/styles/app.scss"
-            ],
+            "styles": ["apps/kamazon/src/assets/styles/app.scss"],
             "scripts": []
           },
           "configurations": {
@@ -198,6 +196,48 @@
           "builder": "@nrwl/jest:jest",
           "options": {
             "jestConfig": "libs/shared/util-auth/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
+    },
+    "products-feature": {
+      "projectType": "library",
+      "root": "libs/products/feature",
+      "sourceRoot": "libs/products/feature/src",
+      "prefix": "future-shop",
+      "architect": {
+        "build": {
+          "builder": "@nrwl/angular:package",
+          "options": {
+            "tsConfig": "libs/products/feature/tsconfig.lib.json",
+            "project": "libs/products/feature/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "libs/products/feature/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/products/feature/tsconfig.lib.json",
+              "libs/products/feature/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/products/feature/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/products/feature/jest.config.js",
             "passWithNoTests": true
           }
         }
