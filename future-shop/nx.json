@@ -40,6 +40,9 @@
     },
     "products-feature": {
       "tags": ["scope:products", "type:feature", "platform:desktop"]
+    },
+    "products-domain": {
+      "tags": ["scope:products", "type:domain", "platform:desktop"]
     }
   }
 }

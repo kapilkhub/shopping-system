@@ -247,6 +247,36 @@
           "style": "scss"
         }
       }
+    },
+    "products-domain": {
+      "projectType": "library",
+      "root": "libs/products/domain",
+      "sourceRoot": "libs/products/domain/src",
+      "prefix": "future-shop",
+      "architect": {
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "libs/products/domain/tsconfig.lib.json",
+              "libs/products/domain/tsconfig.spec.json"
+            ],
+            "exclude": ["**/node_modules/**", "!libs/products/domain/**/*"]
+          }
+        },
+        "test": {
+          "builder": "@nrwl/jest:jest",
+          "options": {
+            "jestConfig": "libs/products/domain/jest.config.js",
+            "passWithNoTests": true
+          }
+        }
+      },
+      "schematics": {
+        "@schematics/angular:component": {
+          "style": "scss"
+        }
+      }
     }
   },
   "cli": {
