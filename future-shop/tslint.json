@@ -66,6 +66,10 @@
           {
             "sourceTag": "type:util",
             "onlyDependOnLibsWithTags": ["type:util"]
+          },
+          {
+            "sourceTag": "scope:products",
+            "onlyDependOnLibsWithTags": ["scope:shared,scope:products"]
           }
         ]
       }

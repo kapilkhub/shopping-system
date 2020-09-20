@@ -43,6 +43,9 @@
     },
     "products-domain": {
       "tags": ["scope:products", "type:domain", "platform:desktop"]
+    },
+    "layout": {
+      "tags": ["scope:shared", "type:util"]
     }
   }
 }
