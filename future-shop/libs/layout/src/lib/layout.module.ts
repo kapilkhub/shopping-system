@@ -7,6 +7,9 @@ import { MatIconModule } from "@angular/material/icon"
 import { RouterModule } from "@angular/router";
 import { MatMenuModule } from "@angular/material/menu"
 import { MatGridListModule } from "@angular/material/grid-list"
+import { MatSidenavModule } from "@angular/material/sidenav"
+import { SidebarTopComponent } from './sidebar-top/sidebar-top.component';
+
 
 
 const Components = [KamazonLayoutComponent]
@@ -19,9 +22,11 @@ const Components = [KamazonLayoutComponent]
     MatIconModule,
     RouterModule,
     MatMenuModule,
-    MatGridListModule
+    MatGridListModule,
+    MatSidenavModule
   ],
-  declarations: [...Components, AppHeaderTopComponent],
-  exports: [...Components]
+  declarations: [...Components, AppHeaderTopComponent,SidebarTopComponent],
+  exports: [...Components],
+
 })
 export class LayoutModule { }

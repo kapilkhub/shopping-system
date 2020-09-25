@@ -8,6 +8,7 @@ import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
 })
 export class KamazonLayoutComponent implements OnInit {
 
+   scrollConfig = {}
   constructor() { }
 
   ngOnInit(): void {
