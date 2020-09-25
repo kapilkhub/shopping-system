@@ -1,5 +1,6 @@
 import { Component, OnInit, ChangeDetectionStrategy, Input } from '@angular/core';
 import { Subscription } from 'rxjs';
+import { MenuItem } from './menuItems.interface';
 
 @Component({
   selector: 'kamazon-app-header-top',
@@ -11,7 +12,7 @@ export class AppHeaderTopComponent implements OnInit {
 
   constructor() { }
   layoutConf: any;
-  menuItems: any;
+  menuItems: MenuItem[] ;
   menuSource: Subscription
   egretThemes: any[] = [];
   currentLang = 'en';
@@ -21,6 +22,12 @@ export class AppHeaderTopComponent implements OnInit {
   @Input() notificPanel;
 
   ngOnInit(): void {
+    this.menuItems = [{
+      name:"Home",
+      type:"link",
+      icon:"home",
+      state:"home"
+    }]
   }
 
   toggleNotific() {
@@ -28,3 +35,6 @@ export class AppHeaderTopComponent implements OnInit {
   }
 
 }
+
+
+
