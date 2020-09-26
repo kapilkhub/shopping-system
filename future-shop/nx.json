@@ -46,6 +46,9 @@
     },
     "products-data-access": {
       "tags": ["scope:products", "type:data-access"]
+    },
+    "shared-data-access": {
+      "tags": ["scope:shared", "type:data-access"]
     }
   }
 }
