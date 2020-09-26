@@ -69,8 +69,8 @@
           },
           {
             "sourceTag": "scope:products",
-            "onlyDependOnLibsWithTags": ["scope:shared,scope:products"]
-          }
+            "onlyDependOnLibsWithTags": ["scope:shared,scope:products","type:data-access"]
+          }         
         ]
       }
     ],

@@ -19,8 +19,10 @@
       "@kamazon/ui-common-lib": ["libs/shared/ui-common/src/index.ts"],
       "@kamazon/util-auth-lib": ["libs/shared/util-auth/src/index.ts"],
       "@kamazon/products/feature": ["libs/products/feature/src/index.ts"],
-      "@kamazon/products/domain": ["libs/products/domain/src/index.ts"],
-      "@kamazon/layout-lib": ["libs/layout/src/index.ts"]
+      "@kamazon/layout-lib": ["libs/layout/src/index.ts"],
+      "@kamazon/products/data-access": [
+        "libs/products/data-access/src/index.ts"
+      ]
     }
   },
   "exclude": ["node_modules", "tmp"]

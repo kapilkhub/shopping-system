@@ -41,11 +41,11 @@
     "products-feature": {
       "tags": ["scope:products", "type:feature", "platform:desktop"]
     },
-    "products-domain": {
-      "tags": ["scope:products", "type:domain", "platform:desktop"]
-    },
     "layout": {
       "tags": ["scope:shared", "type:util"]
+    },
+    "products-data-access": {
+      "tags": ["scope:products", "type:data-access"]
     }
   }
 }
