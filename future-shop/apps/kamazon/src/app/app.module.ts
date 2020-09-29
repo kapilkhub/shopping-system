@@ -12,6 +12,7 @@ import { EffectsModule } from '@ngrx/effects';
 import { StoreDevtoolsModule } from '@ngrx/store-devtools';
 import { environment } from '../environments/environment';
 import { StoreRouterConnectingModule } from '@ngrx/router-store';
+import {SharedDataAccessModule} from '@kamazon/shared/data-access'
 
 
 @NgModule({
@@ -22,6 +23,10 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     SharedUiCommonModule,
     AppRoutingModule,
     LayoutModule,
+    SharedDataAccessModule.forRoot({
+      useDefaultApi:environment.api.useDefaultApi,
+      apiUrl:environment.api.apiUrl
+    }),
     StoreModule.forRoot(
       {},
       {
@@ -34,7 +39,8 @@ import { StoreRouterConnectingModule } from '@ngrx/router-store';
     ),
     EffectsModule.forRoot([]),
     !environment.production ? StoreDevtoolsModule.instrument() : [],
-    StoreRouterConnectingModule.forRoot(),
+    StoreRouterConnectingModule.forRoot()
+   
   ],
   providers: [],
   bootstrap: [AppComponent],

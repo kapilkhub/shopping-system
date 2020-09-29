@@ -1,4 +1,5 @@
 import { Component, OnInit, ChangeDetectionStrategy } from '@angular/core';
+import { ApiCallService } from '@kamazon/shared/data-access';
 
 @Component({
   selector: 'future-shop-home',
@@ -11,6 +12,7 @@ export class HomeComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+   
   }
 
 }

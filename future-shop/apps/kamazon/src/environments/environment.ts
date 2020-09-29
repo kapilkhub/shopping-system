@@ -4,6 +4,10 @@
 
 export const environment = {
   production: false,
+  api:{
+    useDefaultApi:false,
+    apiUrl:"http://localhost:5000/"
+  }
 };
 
 /*

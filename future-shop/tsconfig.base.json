@@ -24,6 +24,7 @@
         "libs/products/data-access/src/index.ts"
       ],
       "@kamazon/shared/data-access": ["libs/shared/data-access/src/index.ts"]
+     
     }
   },
   "exclude": ["node_modules", "tmp"]
