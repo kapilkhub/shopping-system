@@ -1,6 +1,6 @@
 import { NgModule } from "@angular/core";
 import { Routes, RouterModule } from "@angular/router";
-import { KamazonLayoutComponent } from '@kamazon/layout-lib';
+
 import { HomeComponent } from './home/home.component';
 
 
@@ -16,8 +16,7 @@ const routes: Routes = [
       data: { title: "auth" }
     },
     {
-      path: "products",
-      component:KamazonLayoutComponent,
+      path: "products",      
       loadChildren:() => import("@kamazon/products/feature").then(m=>m.ProductsFeatureModule),
     }
 ]

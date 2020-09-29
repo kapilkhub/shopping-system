@@ -40,10 +40,7 @@
     },
     "products-feature": {
       "tags": ["scope:products", "type:feature", "platform:desktop"]
-    },
-    "layout": {
-      "tags": ["scope:shared", "type:util"]
-    },
+    },    
     "products-data-access": {
       "tags": ["scope:products", "type:data-access"]
     },

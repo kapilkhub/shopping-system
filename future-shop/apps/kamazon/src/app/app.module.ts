@@ -5,7 +5,6 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { SharedUiCommonModule } from '@kamazon/ui-common-lib';
 import { AppRoutingModule } from './app-routing.module';
-import { LayoutModule } from '@kamazon/layout-lib';
 import { HomeComponent } from './home/home.component';
 import { StoreModule } from '@ngrx/store';
 import { EffectsModule } from '@ngrx/effects';
@@ -21,8 +20,7 @@ import {SharedDataAccessModule} from '@kamazon/shared/data-access'
     BrowserModule,
     BrowserAnimationsModule,
     SharedUiCommonModule,
-    AppRoutingModule,
-    LayoutModule,
+    AppRoutingModule,    
     SharedDataAccessModule.forRoot({
       useDefaultApi:environment.api.useDefaultApi,
       apiUrl:environment.api.apiUrl
