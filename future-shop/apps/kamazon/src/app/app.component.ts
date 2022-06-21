@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ApiCallService } from '@kamazon/shared/data-access';
 
 @Component({
   selector: 'future-shop-root',
@@ -7,4 +8,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'kamazon';
+  /**
+   *
+   */
+  constructor(private apiCallService:ApiCallService) {
+   
+
+  }
 }
